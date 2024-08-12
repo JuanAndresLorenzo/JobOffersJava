@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Paquetes Laborales - FING - TPROG 2023 - gr45</title>
+
+
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    -->
+
+    <link rel="stylesheet" href="plugins/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="plugins/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="plugins/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<!-- Nav principal pública -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+            <h1>TRABAJO.UY</h1>
+        </a>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmpresas" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./listaPaquetes.html">Paquetes</a></li>
+                    <li><a class="dropdown-item" href="./listaTiposPublicaciones.html">Tipos de publicaciones</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./listarPostulantes.html">Ver Postulantes</a></li>
+                    <li><a class="dropdown-item" href="./listarEmpresas.html">Ver Empresas</a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+
+        <div class="search col-6">
+            <form class="search-box" action="#">
+                <input id="input_buscar" class="form-control-lg" type="text" placeholder=" Ofertas laborales, Empresas "
+                       name="search">
+                <button class="btn btn-lg">
+                    <i class="fa fa-search" style="font-size: 30px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+            <!--            <div class="vr text-white"></div>-->
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="login.html">Iniciar
+                    Sesión</a>
+            </li>
+            <div class="vr text-white"></div>
+            <li class="nav-item">
+                <a class="nav-link" href="./registrarUsuario.html">Registrarse</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Fin Nav principal pública -->
+
+<div class="container px-4 px-lg-5 mt-5">
+
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+
+        <div class="col-12 row">
+
+            <!-- Sección de listado de paquetes -->
+            <div class="col col-12">
+
+                <h1>Oferta - Postulación</h1>
+
+                <div class="col-md-12 row p-3">
+
+                    <div class="col-md-3 p-3">
+
+                        <img class="img-fluid" title="Imagen postulante1"
+                             src="assets/images/usuarios/postulante/postulante1.jpg"/>
+
+                        <p><span class="fw-bold">Postulante: </span><a href="verPostulante.html">Postulante Uno</a></p>
+
+                    </div>
+
+
+                    <div class="col-md-5 p-3">
+
+                        <p><span class="fw-bold">Fecha de postulación: </span>02/09/2023</p>
+
+                        <div class="col-md-12 p-3 border border-1">
+
+                            <h6 class="fw-bold pb-3">Algunos datos personales del postulante: </h6>
+<!--                            <p><span class="fw-bold">Postulante: </span><a href="verPostulante.html">Postulante Uno</a></p>-->
+
+                            <p><span class="fw-bold">Correo: </span>postulante1@gmail.com</p>
+                            <p><span class="fw-bold">Fecha de nacimiento: </span>27/04/2000</p>
+                            <p><span class="fw-bold">Nacionalidad: </span>Uruguayo</p>
+
+                            <div class="pt-3">
+                                <a type="button" class="btn btn-sm btn-info text-white" href="verPostulante.html">
+                                    <i class="fa fa-eye"></i>
+                                    Ver más datos
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12 p-3 mt-3 border border-1">
+
+                            <h6 class="fw-bold pb-3">Archivos adjuntos </h6>
+
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="archivos/adjuntos_postulaciones/pdf_blanco.pdf" target="_blank">Archivo1.pdf</a></li>
+                                <li class="list-group-item"><a href="archivos/adjuntos_postulaciones/pdf_blanco.pdf" target="_blank">Archivo2.pdf</a></li>
+                                <li class="list-group-item"><a href="archivos/adjuntos_postulaciones/pdf_blanco.pdf" target="_blank">Archivo3.pdf</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 p-3 border border-1"">
+
+                    <h6 class="fw-bold pb-3">Datos de la Oferta </h6>
+
+                    <p><span class="fw-bold">Nombre: </span><a href="verOferta.html">Oferta Uno</a></p>
+                        <p><span class="fw-bold">Empresa: </span><a href="verEmpresa.html">Empresa Uno</a></p>
+
+                        <p>
+                            <span class="fw-bold">Keywords: </span>
+                            <span class="badge bg-secondary">Keyword 1</span>
+                            <span class="badge bg-secondary">Keyword 2</span>
+                            <span class="badge bg-secondary">Keyword 3</span>
+                        </p>
+
+                        <p><span class="fw-bold">Departamento: </span>Montevideo</p>
+                        <p><span class="fw-bold">Ciudad: </span>Montevideo</p>
+
+                        <p><span class="fw-bold">Horario: </span>Lun a Vie de 10hs a 16hs</p>
+                        <p><span class="fw-bold">Remuneración: </span>$5.000</p>
+
+                    </div>
+
+                    <div class="col-md-12 p-3">
+                        <p>
+                            <span class="fw-bold">Cv reducido: </span>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                    </div>
+                    <div class="col-md-12 p-3">
+
+
+                        <p>
+                            <span class="fw-bold">Motivación: </span>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-12 text-center p-3">
+                    <button type="" class="btn btn-lg btn-danger" onclick="window.history.back();">
+                        <i class="fa fa-ban"></i>
+                        Cancelar
+                    </button>
+<!--                    <button type="submit" class="btn btn-lg btn-info text-white">-->
+<!--                        <i class="fa fa-paper-plane"></i>-->
+<!--                        Postularse-->
+<!--                    </button>-->
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal de inicio de sesion -->
+<div id="login-modal" class="modal">
+  	<div class="modal-dialog">
+    <!-- Contenido del modal -->
+    <form class="modal-content animate" action="/action_page.php">
+  
+  
+      <div class="container">
+        <label for="uname"><b>Nombre de Usuario </b></label>
+        <input type="text" placeholder="Ingrese el nombre de usuario" name="uname" required>
+  
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Ingrese la contraseña" name="psw" required>
+  
+          <button type="button" onclick="document.getElementById('login-modal').style.display='none'" class="cancelbtn">Cancelar</button>
+          <button class="loginbtn" type="submit">Iniciar Sesión</button>
+      </div>
+    </form>
+  	</div>
+</div>
+
+<footer class="bg-light text-center text-lg-start mt-auto">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://www.fing.edu.uy">FING - TPROG - GR45</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+</body>
+</html>

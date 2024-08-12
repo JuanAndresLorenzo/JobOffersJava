@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ofertas Laborales - FING - TPROG 2023 - gr45</title>
+
+    <!-- Plugins de terceros -->
+    <link href="../../plugins/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link href="../../plugins/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../plugins/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fin Plugins de terceros -->
+
+    <!-- Nuestros estilos -->
+    <link href="../../assets/css/navbar.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <!-- Fin Nuestros estilos -->
+
+    <!-- Nuestros scripts -->
+    <script src="../../assets/js/navbar.js"></script>
+    <!-- Fin Nuestros scripts -->
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Nav principal pública -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="../../indexEmpresa.html">
+            <h1>TRABAJO.UY</h1>
+        </a>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmpresas" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Empresas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./listaPaquetesEmpresa.html">Paquetes</a></li>
+                    <li><a class="dropdown-item" href="./listaTiposPublicacionesEmpresa.html">Tipos de publicaciones</a></li>
+<li><a class="dropdown-item" href="altaOfertaEmpresa.html">Alta Oferta Laboral</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./listarPostulantesEmpresa.html">Ver Postulantes</a></li>
+                    <li><a class="dropdown-item" href="./listarEmpresasEmpresa.html">Ver Empresas</a></li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <div class="search col-6">
+            <form class="search-box" action="#">
+                <input id="input_buscar" class="form-control-lg" type="text" placeholder=" Ofertas laborales, Empresas "
+                       name="search">
+                <button class="btn btn-lg">
+                    <i class="fa fa-search" style="font-size: 30px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user"
+                       style="font-size: 18px;">
+                    </i>
+                    ecotech
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="miInfoEmpresa.html">Mi perfil</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../../index.html">Cerrar sesión</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Fin Nav principal pública -->
+
+
+<div class="container px-4 px-lg-5 mt-5">
+
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+
+        <div class="col-12 row">
+
+            <h3 class="text-center">Compra de paquete</h3>
+
+            <form>
+                <div class="col-md-12 row p-3">
+
+                <div class="col-md-9 p-3">
+                    <label for="paquete" class="form-label">Paquete</label>
+                    <input type="text" class="form-control form-control-lg" id="nombre" value="Basico" disabled>
+                </div>
+                <div class="col-md-3 p-3">
+                    <label for="fecha_alta" class="form-label">Fecha de alta</label>
+                    <input type="text" class="form-control form-control-lg" id="fecha_alta" value="16/08/2023" disabled>
+                </div>
+                </div>
+
+                <div class="col-md-12 row p-3">
+
+                <div class="col-md-6 p-3">
+                    <label for="tipo_publicacion" class="form-label">Tipo de publicación</label>
+                    <select id="tipo_publicacion" class="form-select form-select-lg">
+                        <option value="" selected>Ver tipos de publicación</option>
+                        <option value="tipoPublicacion1" disabled>Premium: 1</option>
+                        <option value="tipoPublicacion2" disabled>Destacada: 1</option>
+                        <option value="tipoPublicacion3" disabled>Estándar: 1</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 p-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control form-control-lg" id="nombre" value="Paquete 1" disabled>
+                </div>
+
+                </div>
+
+                <div class="col-md-12 row p-3">
+
+
+                <div class="col-md-4 p-3">
+                    <label for="validez_dias" class="form-label">Validez días</label>
+                    <input type="text" class="form-control form-control-lg" id="validez_dias" value="30" disabled>
+                </div>
+
+                <div class="col-md-4 p-3">
+                    <label for="descuento" class="form-label">Descuento %</label>
+                    <input type="text" class="form-control form-control-lg" id="descuento" value="20" disabled>
+                </div>
+
+                    <div class="col-md-4 p-3">
+                        <label for="costo" class="form-label">Costo $</label>
+                        <input type="text" class="form-control form-control-lg" id="costo" value="240" disabled>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12 p-3">
+                    <label for="descripcion" class="form-label">Descripción</label>
+                    <textarea class="form-control" rows="5" id="descripcion" disabled>Publica ofertas laborales en nuestra plataforma porun período de 30 días.</textarea>
+                </div>
+
+                <div class="col-12 text-center p-3">
+                    <a type="button" class="btn btn-danger btn-cancelar" onclick="window.history.back();">
+                        <i class="fa fa-ban"></i>
+                        Cancelar
+                    </a>
+                    <button type="submit" class="btn btn-success btn-guardar btn-comprar">
+                        <i class="fa fa-dollar-sign"></i>
+                        Comprar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start mt-auto">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://www.fing.edu.uy">FING - TPROG - GR45</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+
+
+</body>
+
+</html>

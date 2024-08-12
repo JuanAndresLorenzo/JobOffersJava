@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ofertas Laborales - FING - TPROG 2023 - gr45</title>
+
+    <!-- Plugins de terceros -->
+    <link href="../../plugins/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link href="../../plugins/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../plugins/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fin Plugins de terceros -->
+
+    <!-- Nuestros estilos -->
+    <link href="../../assets/css/navbar.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <!-- Fin Nuestros estilos -->
+
+    <!-- Nuestros scripts -->
+    <script src="../../assets/js/navbar.js"></script>
+    <!-- Fin Nuestros scripts -->
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Nav principal pública -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="../../indexEmpresa.html">
+            <h1>TRABAJO.UY</h1>
+        </a>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmpresas" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Empresas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./listaPaquetesEmpresa.html">Paquetes</a></li>
+                    <li><a class="dropdown-item" href="./listaTiposPublicacionesEmpresa.html">Tipos de publicaciones</a></li>
+<li><a class="dropdown-item" href="altaOfertaEmpresa.html">Alta Oferta Laboral</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./listarPostulantesEmpresa.html">Ver Postulantes</a></li>
+                    <li><a class="dropdown-item" href="./listarEmpresasEmpresa.html">Ver Empresas</a></li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <div class="search col-6">
+            <form class="search-box" action="#">
+                <input id="input_buscar" class="form-control-lg" type="text" placeholder=" Ofertas laborales, Empresas "
+                       name="search">
+                <button class="btn btn-lg">
+                    <i class="fa fa-search" style="font-size: 30px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user"
+                       style="font-size: 18px;">
+                    </i>
+                    ecotech
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="miInfoEmpresa.html">Mi perfil</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../../index.html">Cerrar sesión</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Fin Nav principal pública -->
+
+
+<div class="container px-4 px-lg-5 mt-5">
+
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+
+        <div class="col-12 row">
+
+            <!-- Sección de listado de paquetes -->
+            <div class="col col-12">
+
+                <h1>Desarrollador Frontend</h1>
+
+                <div class="col-md-12 row p-3">
+
+                    <div class="col col-3">
+                        <img class="img-fluid" title="Imagen oferta1"
+                             src="../../assets/images/ofertas_laborales/frontEndDev.jpg"/>
+                    </div>
+
+
+                    <div class="col-md-3 p-3">
+
+                        <p><span class="fw-bold">Nombre: </span>Desarrollador Frontend</p>
+                        <p><span class="fw-bold">Empresa: </span><a href="verEmpresaEmpresa.html">EcoTech</a></p>
+                        <p><span class="fw-bold">Fecha de alta: </span>14/08/2023</p>
+
+                        <p>
+                            <span class="fw-bold">Keywords: </span>
+                            <span class="badge bg-secondary">Keyword 1</span>
+                            <span class="badge bg-secondary">Keyword 2</span>
+                            <span class="badge bg-secondary">Keyword 3</span>
+                        </p>
+
+                        <p><span class="fw-bold">Departamento: </span>Montevideo</p>
+                        <p><span class="fw-bold">Ciudad: </span>Montevideo</p>
+                        <p><span class="fw-bold">Tipo de Publicacion:</span> Premium </p>
+                        <p><span class="fw-bold">Horario: </span>09:00 - 18:00</p>
+                        <p><span class="fw-bold">Remuneración: </span>$90.000</p>
+                        <p><span class="fw-bold">Paquete:</span><a href="verPaqueteEmpresa.html"> Básico</a></p>
+
+                    </div>
+
+                    <div class="col-md-6 p-3">
+
+
+                        <p>
+                            <span class="fw-bold">Descripción: </span>
+                            Unete a nuestro equipo de desarrollo frontend y creá experiencias de usuario excepcionales.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <nav id="nav_contenido">
+
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link" id="nav-postulaciones-tab" data-bs-toggle="tab" data-bs-target="#nav-postulaciones"
+                            type="button" role="tab" aria-controls="nav-postulaciones" aria-selected="false">Postulaciones
+                    </button>
+
+                </div>
+
+                <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active p-5" id="nav-postulaciones" role="tabpanel" aria-labelledby="nav-postulaciones-tab">
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Postulantes</th>
+                                <th scope="col">Fecha postulación</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="row p-3">
+                                        <div class="col col-3">
+                                            <img class="img-fluid" title="Imágen postulante1"
+                                                 src="https://imgv3.fotor.com/images/gallery/a-woman-linkedin-picture-with-grey-background-made-by-LinkedIn-Profile-Picture-Maker.jpg">
+                                        </div>
+                                        <div class="col col-9">
+                                            <h3>Lucía García</h3>
+                                            <div class="item-info">
+                                                <p><span class="fw-bold">Nickname: </span>lgarcia</p>
+                                                <p><span class="fw-bold">Email: </span>lgarcia85@gmail.com</p>
+                                                <div class="item-acciones pt-3">
+                                                    <a type="button" class="btn btn-sm btn-info text-white btn-ver" href="verPostulacionEmpresa.html">
+                                                        <i class="fa fa-eye"></i>
+                                                        Ver postulación
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>16/08/2023</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row p-3">
+                                        <div class="col col-3">
+                                            <img class="img-fluid" title="Imágen postulante1"
+                                                 src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
+                                        </div>
+                                        <div class="col col-9">
+                                            <h3>María Rodríguez</h3>
+                                            <div class="item-info">
+                                                <p><span class="fw-bold">Nickname: </span>maro</p>
+                                                <p><span class="fw-bold">Email: </span>marrrod@gmail.com</p>
+                                                <div class="item-acciones pt-3">
+                                                    <a type="button" class="btn btn-sm btn-info text-white btn-ver" href="verPostulacionEmpresa.html">
+                                                        <i class="fa fa-eye"></i>
+                                                        Ver postulación
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>14/08/2023</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start mt-auto">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://www.fing.edu.uy">FING - TPROG - GR45</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+
+
+</body>
+
+</html>

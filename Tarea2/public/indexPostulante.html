@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ofertas Laborales - FING - TPROG 2023 - gr45</title>
+
+    <!-- Plugins de terceros -->
+    <link href="plugins/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="plugins/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fin Plugins de terceros -->
+
+    <!-- Nuestros estilos -->
+    <link href="assets/css/navbar.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Fin Nuestros estilos -->
+
+    <!-- Nuestros scripts -->
+    <script src="assets/js/navbar.js"></script>
+    <!-- Fin Nuestros scripts -->
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Nav principal pública -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="indexPostulante.html">
+            <h1>TRABAJO.UY</h1>
+        </a>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmpresas" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Postulantes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+<!--                    <li><a class="dropdown-item" href="./listaPaquetes.html">Paquetes</a></li>-->
+                    <li><a class="dropdown-item" href="./paginas/postulante/listaTiposPublicacionesPostulante.html">Tipos de publicaciones</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./paginas/postulante/listarPostulantesPostulante.html">Ver Postulantes</a></li>
+                    <li><a class="dropdown-item" href="./paginas/postulante/listarEmpresasPostulante.html">Ver Empresas</a></li>
+
+                </ul>
+            </li>
+           
+
+        </ul>
+
+        <div class="search col-6">
+            <form class="search-box" action="#">
+                <input id="input_buscar" class="form-control-lg" type="text" placeholder=" Ofertas laborales, Empresas "
+                       name="search">
+                <button class="btn btn-lg">
+                    <i class="fa fa-search" style="font-size: 30px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user"
+                       style="font-size: 18px;">
+                    </i>
+                    lgarcia
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./paginas/postulante/miInfoPostulante.html">Mi perfil</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./index.html">Cerrar sesión</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Fin Nav principal pública -->
+
+<div class="container px-4 px-lg-5 mt-5">
+
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+
+        <div class="col-12 row">
+            <!-- Sección de listado de keywords -->
+            <div class="col col-3">
+
+
+                <!--                <div class="row p-3 bg-light">-->
+                <!--                    <div class="col col-12">-->
+                <!--                        <p style="text-align: center;">Filtrar por Keyword:</p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <div id="listado_keywords" class="text-center">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item ">
+                            Filtrar por keywords
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-secondary mx-3">Keyword 1</span>
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                            </div>
+                            <span class="badge bg-secondary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-secondary mx-3">Keyword 2</span>
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                            </div>
+                            <span class="badge bg-secondary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-secondary mx-3">Keyword 3</span>
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                            </div>
+                            <span class="badge bg-secondary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-secondary mx-3">Keyword 4</span>
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                            </div>
+                            <span class="badge bg-secondary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-secondary mx-3">Keyword 5</span>
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                            </div>
+                            <span class="badge bg-secondary rounded-pill">1</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- Fin Sección de listado de keywords -->
+
+            <!-- Sección de listado de ofertas -->
+            <div class="col col-9">
+                <div id="listado_ofertas">
+
+                    <div class="row p-3">
+                        <div class="col col-3">
+                            <img class="img-fluid" title="Imagen oferta1"
+                                 src="./assets/images/ofertas_laborales/frontEndDev.jpg"/>
+                        </div>
+                        <div class="col col-9">
+                            <h3>Desarrollador Frontend</h3>
+                            <div class="item-info">
+                                <span class="text-muted float-start">Montevideo, Montevideo</span>
+                                <span class="text-muted float-end">Fecha de alta: 14/08/2023</span>
+                                <br>
+                                <span class="badge bg-danger">
+                                        <i class="fa fa-building"></i> EcoTech
+                                    </span>
+                                <span class="badge bg-primary">
+                                        <i class="fa fa-clock"></i> Horario: 09:00 - 18:00
+                                    </span>
+                                <span class="badge bg-success">
+                                        <i class="fa fa-money-bill"></i> Remuneración: $90.000
+                                    </span>
+                                <span class="badge bg-success">
+                                        <i class="fa fa-money-bill"></i> Tipo de Publicacion: Premium
+                                    </span>
+
+                                <br>
+                                <span class="badge bg-secondary">Keyword 1</span>
+                                <span class="badge bg-secondary">Keyword 2</span>
+                                <span class="badge bg-secondary">Keyword 3</span>
+
+                            </div>
+                            <div class="item-descripcion pt-3">
+                                    <span>
+                                        Únete a nuestro equipo de desarrollo frontend y crea experiencias de usuario excepcionales.
+
+                                    </span>
+                            </div>
+                            <div class="item-acciones pt-3">
+                                <a type="button" class="btn btn-sm btn-primary btn-ver" href="paginas/postulante/verOferta1Postulante.html">
+                                    <i class="fa fa-eye"></i>
+                                    Ver
+                                </a>
+<!--                                <a type="button" class="btn btn-sm btn-primary btn-postularse" href="paginas/postulante/postulacionOferta.html">-->
+<!--                                    <i class="fa fa-eye"></i>-->
+<!--                                    Postularse-->
+<!--                                </a>-->
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row p-3">
+                        <div class="col col-3">
+                            <img class="img-fluid" title="Imagen oferta2"
+                                 src="./assets/images/ofertas_laborales/analistaDeMarketing.jpg"/>
+                        </div>
+                        <div class="col col-9">
+                            <h3>A. de Marketing Digital</h3>
+                            <div class="item-info">
+                                <span class="text-muted float-start">Flores, Flores</span>
+                                <span class="text-muted float-end">Fecha de alta: 15/08/2023</span>
+                                <br>
+                                <span class="badge bg-danger">
+                                        <i class="fa fa-building"></i> EcoTech
+                                    </span>
+                                <span class="badge bg-primary">
+                                        <i class="fa fa-clock"></i> Horario: 10:00 - 19:00
+                                    </span>
+                                <span class="badge bg-success">
+                                        <i class="fa fa-money-bill"></i> Remuneración: $80.000
+                                    </span>
+                                <span class="badge bg-success">
+                                        <i class="fa fa-money-bill"></i> Tipo de Publicacion: Premium
+                                    </span>
+
+                                <br>
+                                <span class="badge bg-secondary">Keyword 4</span>
+                                <span class="badge bg-secondary">Keyword 5</span>
+                            </div>
+                            <div class="item-descripcion pt-3">
+                                    <span>
+                                        Únete a nuestro equipo de marketing y trabaja en estrategias digitales innovadoras.
+
+                                    </span>
+                            </div>
+                            <div class="item-acciones pt-3">
+                                <a type="button" class="btn btn-sm btn-primary btn-ver" href="paginas/postulante/verOferta2Postulante.html">
+                                    <i class="fa fa-eye"></i>
+                                    Ver
+                                </a>
+                                <a type="button" class="btn btn-sm btn-info text-white btn-postularse" href="paginas/postulante/postulacionOferta.html">
+                                    <i class="fa fa-paper-plane"></i>
+                                    Postularse
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+<!--                    <div class="row p-3">-->
+<!--                        <div class="col col-3">-->
+<!--                            <img class="img-fluid" title="Imagen oferta1"-->
+<!--                                 src="./assets/images/ofertas_laborales/oferta3.jpg"/>-->
+<!--                        </div>-->
+<!--                        <div class="col col-9">-->
+<!--                            <h3>Oferta tres</h3>-->
+<!--                            <div class="item-info">-->
+<!--                                <span class="text-muted float-start">Maldonado, Punta del Este</span>-->
+<!--                                <span class="text-muted float-end">Fecha de alta: 18/08/2023</span>-->
+<!--                                <br>-->
+<!--                                <span class="badge bg-danger">-->
+<!--                                        <i class="fa fa-building"></i> Empresa Tres-->
+<!--                                    </span>-->
+<!--                                <span class="badge bg-primary">-->
+<!--                                        <i class="fa fa-clock"></i> Horario: Lun a Martes de 12hs a 16hs-->
+<!--                                    </span>-->
+<!--                                <span class="badge bg-success">-->
+<!--                                        <i class="fa fa-money-bill"></i> Remuneración: $500.000-->
+<!--                                    </span>-->
+
+<!--                                <br>-->
+<!--                                <span class="badge bg-secondary">Keyword 1</span>-->
+
+<!--                            </div>-->
+<!--                            <div class="item-descripcion pt-3">-->
+<!--                                    <span>-->
+<!--                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,-->
+<!--                                        when an unknown printer took a galley of type and scrambled it to make a type-->
+<!--                                        specimen book.-->
+
+<!--                                    </span>-->
+<!--                            </div>-->
+<!--                            <div class="item-acciones pt-3">-->
+<!--                                <a type="button" class="btn btn-sm btn-primary btn-ver" href="verOferta.html">-->
+<!--                                    <i class="fa fa-eye"></i>-->
+<!--                                    Ver-->
+<!--                                </a>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr>-->
+<!--                    <div class="row p-3">-->
+<!--                        <div class="col col-3">-->
+<!--                            <img class="img-fluid" title="Imagen oferta1"-->
+<!--                                 src="./assets/images/ofertas_laborales/oferta4.jpg"/>-->
+<!--                        </div>-->
+<!--                        <div class="col col-9">-->
+<!--                            <h3>Oferta cuatro</h3>-->
+<!--                            <div class="item-info">-->
+<!--                                <span class="text-muted float-start">Rocha, La Paloma</span>-->
+<!--                                <span class="text-muted float-end">Fecha de alta: 19/08/2023</span>-->
+<!--                                <br>-->
+<!--                                <span class="badge bg-danger">-->
+<!--                                        <i class="fa fa-building"></i> Empresa Cuatro-->
+<!--                                    </span>-->
+<!--                                <span class="badge bg-primary">-->
+<!--                                        <i class="fa fa-clock"></i> Horario: Martes a Domingo de 7hs a 14hs-->
+<!--                                    </span>-->
+<!--                                <span class="badge bg-success">-->
+<!--                                        <i class="fa fa-money-bill"></i> Remuneración: $20.000-->
+<!--                                    </span>-->
+
+<!--                                <br>-->
+<!--                                <span class="badge bg-secondary">Keyword 1</span>-->
+<!--                                <span class="badge bg-secondary">Keyword 2</span>-->
+<!--                                <span class="badge bg-secondary">Keyword 3</span>-->
+<!--                                <span class="badge bg-secondary">Keyword 4</span>-->
+<!--                                <span class="badge bg-secondary">Keyword 5</span>-->
+
+<!--                            </div>-->
+<!--                            <div class="item-descripcion pt-3">-->
+<!--                                    <span>-->
+<!--                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,-->
+<!--                                        when an unknown printer took a galley of type and scrambled it to make a type-->
+<!--                                        specimen book.-->
+
+<!--                                    </span>-->
+<!--                            </div>-->
+<!--                            <div class="item-acciones pt-3">-->
+<!--                                <a type="button" class="btn btn-sm btn-primary btn-ver" href="verOferta.html">-->
+<!--                                    <i class="fa fa-eye"></i>-->
+<!--                                    Ver-->
+<!--                                </a>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr>-->
+<!--                    <div class="row p-3">-->
+<!--                        <div class="col col-3">-->
+<!--                            <img class="img-fluid" title="Imagen oferta1"-->
+<!--                                 src="./assets/images/ofertas_laborales/oferta5.jpg"/>-->
+<!--                        </div>-->
+<!--                        <div class="col col-9">-->
+<!--                            <h3>Oferta cinco</h3>-->
+<!--                            <div class="item-info">-->
+<!--                                <span class="text-muted float-start">Maldonado, Piriápolis</span>-->
+<!--                                <span class="text-muted float-end">Fecha de alta: 21/08/2023</span>-->
+<!--                                <br>-->
+<!--                                <span class="badge bg-danger">-->
+<!--                                        <i class="fa fa-building"></i> Empresa Cinco-->
+<!--                                    </span>-->
+<!--                                <span class="badge bg-primary">-->
+<!--                                        <i class="fa fa-clock"></i> Horario: Lun a Lun de 8hs a 22hs-->
+<!--                                    </span>-->
+<!--                                <span class="badge bg-success">-->
+<!--                                        <i class="fa fa-money-bill"></i> Remuneración: $1.000.000-->
+<!--                                    </span>-->
+
+<!--                                <br>-->
+<!--                                <span class="badge bg-secondary">Keyword 1</span>-->
+<!--                                <span class="badge bg-secondary">Keyword 2</span>-->
+<!--                                <span class="badge bg-secondary">Keyword 3</span>-->
+
+<!--                            </div>-->
+<!--                            <div class="item-descripcion pt-3">-->
+<!--                                    <span>-->
+<!--                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,-->
+<!--                                        when an unknown printer took a galley of type and scrambled it to make a type-->
+<!--                                        specimen book.-->
+
+<!--                                    </span>-->
+<!--                            </div>-->
+<!--                            <div class="item-acciones pt-3">-->
+<!--                                <a type="button" class="btn btn-sm btn-primary btn-ver" href="verOferta.html">-->
+<!--                                    <i class="fa fa-eye"></i>-->
+<!--                                    Ver-->
+<!--                                </a>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr>-->
+
+                </div>
+            </div>
+        </div>
+        <!-- Fin Sección de listado de ofertas -->
+
+    </div>
+</div>
+</div>
+
+
+<footer class="bg-light text-center text-lg-start mt-auto">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://www.fing.edu.uy">FING - TPROG - GR45</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+
+
+</body>
+
+</html>

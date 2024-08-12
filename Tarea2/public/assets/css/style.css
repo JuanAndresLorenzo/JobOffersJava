@@ -1,0 +1,23 @@
+.profile-picture-big{
+    width: 150px !important;    
+}
+
+*{ text-decoration: none !important; }
+
+#errorUsuarioIncorrecto{
+    visibility:hidden;
+    color: red;
+    font-weight: bold;
+}
+
+#errorClaveVacia{
+    visibility:hidden;
+    color: red;
+    font-weight: bold;
+}
+
+#errorUsuarioVacio{
+    visibility:hidden;
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+
+/* Estilo de la barra de búsqueda */
+.search input[type=text] {
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+}
+
+.search-box {
+    display: flex;
+    border: none;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.search button {
+    background-color: transparent;
+    color: #f2f2f2;
+    padding: 0 13px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#input_buscar {
+    width: 100%;
+}

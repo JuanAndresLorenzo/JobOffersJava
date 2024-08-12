@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ofertas Laborales - FING - TPROG 2023 - gr45</title>
+
+    <!-- Plugins de terceros -->
+    <link href="../../plugins/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link href="../../plugins/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../plugins/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../plugins/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../plugins/jquery/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="../../plugins/jquery/jquery-validation-1.19.5/dist/localization/messages_es_AR.min.js"></script>
+
+    <!-- Fin Plugins de terceros -->
+
+    <!-- Nuestros estilos -->
+    <link href="../../assets/css/navbar.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <!-- Fin Nuestros estilos -->
+
+    <!-- Nuestros scripts -->
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/postulacionOferta.js"></script>
+    <!-- Fin Nuestros scripts -->
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Nav principal pública -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="../../indexPostulante.html">
+            <h1>TRABAJO.UY</h1>
+        </a>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmpresas" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Postulantes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!--                    <li><a class="dropdown-item" href="./listaPaquetesPostulante.html">Paquetes</a></li>-->
+                    <li><a class="dropdown-item" href="./listaTiposPublicacionesPostulante.html">Tipos de publicaciones</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./listarPostulantesPostulante.html">Ver Postulantes</a></li>
+                    <li><a class="dropdown-item" href="./listarEmpresasPostulante.html">Ver Empresas</a></li>
+
+                </ul>
+            </li>
+           
+
+        </ul>
+
+        <div class="search col-6">
+            <form class="search-box" action="#">
+                <input id="input_buscar" class="form-control-lg" type="text" placeholder=" Ofertas laborales, Empresas "
+                       name="search">
+                <button class="btn btn-lg">
+                    <i class="fa fa-search" style="font-size: 30px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user"
+                       style="font-size: 18px;">
+                    </i>
+                    lgarcia
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="miInfoPostulante.html">Mi perfil</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../../index.html">Cerrar sesión</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Fin Nav principal pública -->
+
+<div class="container px-4 px-lg-5 mt-5">
+
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+
+        <div class="col-12 row">
+
+            <h3 class="text-center">Postulación a Oferta Laboral</h3>
+
+            <form id="form_postulacion">
+
+                <div class="col-md-12 p-3">
+                    <label for="postulante" class="form-label">Postulante</label>
+                    <input type="text" class="form-control form-control-lg" disabled value="Lucía García">
+                </div>
+
+                <div class="col-md-12 row p-3">
+
+                    <div class="col-md-12 p-3">
+                        <label for="empresa" class="form-label">Empresa</label>
+                        <input type="text" class="form-control form-control-lg" disabled value="EcoTech">
+                    </div>
+
+                    <h5>Datos de la empresa seleccionada</h5>
+
+                    <div class="col-md-12 row p-3">
+
+                        <div class="col-md-6 p-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control form-control-lg" id="nombre" value="Sophia"
+                                   disabled>
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control form-control-lg" id="apellido" value="Johnson" disabled>
+                        </div>
+                    </div>
+
+                    <div id="div_campos_empresa" class="col-md-12 row p-3">
+
+                        <div class="col-md-6 p-3">
+                            <label for="nombre_empresa" class="form-label">Nombre de empresa</label>
+                            <input type="text" class="form-control form-control-lg" id="nombre_empresa"
+                                   value="EcoTech" disabled>
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <label for="sitio_web" class="form-label">Página web</label>
+                            <input type="url" class="form-control form-control-lg" id="sitio_web"
+                                   value="https://www.ecotechinnovations.com" disabled>
+                        </div>
+
+                        <div class="col-md-12 p-3">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <textarea class="form-control" rows="10" id="descripcion" disabled>EcoTech Innovations es una empresa líder en soluciones tecnológicas sostenibles. Nuestro enfoque se centra en desarrollar y comercializar productos y servicios que aborden losdesafíos ambientales más apremiantes de nuestro tiempo. Desde sistemas de energía renovable y dispositivos de monitorización ambiental hasta soluciones de gestión de residuos inteligentes, nuestra misión es proporcionar herramientas que permitan a las empresas y comunidades adoptar prácticas más ecológicas sin comprometer la eficiencia. Creemos en la convergencia armoniosa entre la tecnología y la naturaleza, y trabajamos incansablemente para impulsar un futuro más limpio y sostenible.
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 row p-3">
+
+                        <div class="col-md-6 p-3">
+                            <label for="nickname" class="form-label">Nickname</label>
+                            <input type="text" class="form-control form-control-lg" id="nickname" disabled
+                                   value="EcoTech">
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control form-control-lg" id="correo" disabled
+                                   value="info@EcoTech.com">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-12 row p-3 ">
+
+                    <h5>Postulación</h5>
+
+
+                    <div class="col-md-12 p-3">
+                        <label for="oferta" class="form-label">Ofertas de la empresa</label>
+                        <input type="text" class="form-control form-control-lg" disabled value="A. de Marketing Digital">
+                    </div>
+
+                    <div class="col-md-12 p-3">
+                        <label for="fecha" class="form-label">Fecha</label>
+                        <input type="date" class="form-control form-control-lg" id="todayDate" disabled>
+                    </div>
+                    <div class="col-md-12 p-3">
+                        <label for="cv_reducido" class="form-label">CV reducido</label>
+                        <textarea class="form-control" rows="5" id="cv_reducido" name="cv_reducido"></textarea>
+                    </div>
+
+                    <div class="col-md-12 p-3">
+                        <label for="motivacion" class="form-label">Motivación</label>
+                        <textarea class="form-control" rows="5" id="motivacion" name="motivacion"></textarea>
+                    </div>
+
+                    <div class="col-md-12 p-3">
+                        <label for="adjuntos" class="form-label">Adjuntos</label>
+                        <input type="file" class="form-control form-control-lg" id="adjuntos" name="adjuntos">
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 text-center p-3">
+                    <a type="button" class="btn btn-danger btn-cancelar" onclick="window.history.back();">
+                        <i class="fa fa-ban"></i>
+                        Cancelar
+                    </a>
+                    <button type="submit" class="btn btn-info text-white btn-guardar btn-postularse">
+                                <i class="fa fa-paper-plane text-white"></i>
+                                Postularse
+                       </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start mt-auto">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://www.fing.edu.uy">FING - TPROG - GR45</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script>
+    document.getElementById("todayDate").valueAsDate = new Date();
+   </script>
+
+
+</body>
+
+</html>

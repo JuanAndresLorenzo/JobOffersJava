@@ -1,0 +1,22 @@
+/*
+#caja {
+    border: 2px solid gray;
+}
+
+#keywords {
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+#miperfil {
+    background-color: lightgrey;
+}*/
+
+#nav_contenido {
+ background-color: rgba(255, 255, 255, 0);
+}
+
+#izq {
+    text-align: left;
+}

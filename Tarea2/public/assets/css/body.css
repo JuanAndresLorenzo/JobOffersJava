@@ -1,0 +1,41 @@
+#descripcion{
+    display: block;
+}
+
+.info-line__label{
+    display: inline-block;
+    font-weight: bold;
+    width: 30%;
+}
+.attribute-value{
+    width: 70%;
+    display: inline;
+    margin-left: 5%;
+}
+
+.info-header{
+    display: inline-flex;
+}
+
+.postulante-item{
+    display: flex;
+}
+
+.paquete-item{
+    display: flex;
+}
+
+.lista-keywords{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-picture{
+    width: 60px;
+    height: 60px;
+}
+
+.keyword{
+    color: black;
+}
+
